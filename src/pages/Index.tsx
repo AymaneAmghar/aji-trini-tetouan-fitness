@@ -401,10 +401,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <img src="/lovable-uploads/598dd682-567a-4cda-a07d-3d6f8dcb5151.png" alt="Aji Trini" className="h-12 w-auto mb-4" />
-              <p className="text-muted-foreground">
-                Transform your life at Tetouan's premier fitness destination. 
-                Strength, community, and motivation in one place.
-              </p>
+              <p className="text-muted-foreground">Unleash your full potential at our GYM! We're your destination for fitness success. Join us now and start your journey to a fitter, happier you!</p>
             </div>
             <div>
               <h4 className="font-semibold text-primary mb-4">Quick Links</h4>
@@ -418,10 +415,10 @@ const Index = () => {
             <div>
               <h4 className="font-semibold text-primary mb-4">Contact Info</h4>
               <div className="space-y-2 text-muted-foreground">
-                <p>123 Avenue Mohammed V</p>
+                <p>Av, Haj Mohamed Bennouna</p>
                 <p>Tetouan, Morocco</p>
-                <p>+212 539 12 34 56</p>
-                <p>info@ajitrini.ma</p>
+                <p>+212 628473604</p>
+                <p>@ajitrini09</p>
               </div>
             </div>
           </div>
