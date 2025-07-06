@@ -106,18 +106,18 @@ const Index = () => {
   }];
   const pricingPlans = [{
     name: "Day Pass",
-    price: "25 MAD",
+    price: "25 Dh",
     period: "per day",
-    features: ["Full gym access", "All equipment", "Locker room"]
+    features: ["Full gym access", "All equipment", "Locker room", "Free Shower service"]
   }, {
     name: "Monthly",
-    price: "200 MAD",
+    price: "200 DH",
     period: "per month",
     features: ["Unlimited access", "All classes", "Nutrition guidance", "Free Shower service"],
     popular: true
   }, {
     name: "Kids Sessions",
-    price: "Coming Soon",
+    price: "150 DH",
     period: "per month",
     features: ["Group training", "Customized program", "Nutrition plan", "Progress tracking"]
   }];
