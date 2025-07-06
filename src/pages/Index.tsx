@@ -110,20 +110,20 @@ const Index = () => {
   }];
   const pricingPlans = [{
     name: "Day Pass",
-    price: "50 DH",
+    price: "25 MAD",
     period: "per day",
-    features: ["Full gym access", "All equipment", "Group classes", "Locker room"]
+    features: ["Full gym access", "All equipment", "Locker room"]
   }, {
     name: "Monthly",
-    price: "300 DH",
+    price: "200 MAD",
     period: "per month",
-    features: ["Unlimited access", "All classes", "Nutrition guidance", "Free towel service"],
+    features: ["Unlimited access", "All classes", "Nutrition guidance", "Free Shower service"],
     popular: true
   }, {
-    name: "Personal Training",
-    price: "150 DH",
-    period: "per session",
-    features: ["1-on-1 training", "Customized program", "Nutrition plan", "Progress tracking"]
+    name: "Kids Sessions",
+    price: "Coming Soon",
+    period: "per month",
+    features: ["Group training", "Customized program", "Nutrition plan", "Progress tracking"]
   }];
   return <div className="min-h-screen bg-background">
       {/* Navigation */}
