@@ -74,17 +74,13 @@ const Index = () => {
       trainer: "Al Khansaa El Ouardighi"
     }],
     wednesday: [{
-      time: "06:00",
-      class: "Morning Yoga",
-      trainer: "Fatima"
+      time: "19:00",
+      class: "First Session",
+      trainer: "Soufian Bakali"
     }, {
-      time: "17:00",
-      class: "Strength & Power",
-      trainer: "Mohamed"
-    }, {
-      time: "19:30",
-      class: "Mixed Training",
-      trainer: "Youssef"
+      time: "20:00",
+      class: "Second Session",
+      trainer: "Soufian Bakali"
     }]
   };
   const testimonials = [{
