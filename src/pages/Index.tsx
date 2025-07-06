@@ -63,10 +63,6 @@ const Index = () => {
       time: "12:30 - 23:30",
       class: "Tuesday, Thursday, Saturday",
       trainer: "Mohamed"
-    }, {
-      time: "20:00",
-      class: "Group HIIT",
-      trainer: "Youssef"
     }],
     tuesday: [{
       time: "07:00",
