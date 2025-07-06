@@ -52,16 +52,16 @@ const Index = () => {
   }];
   const schedule = {
     monday: [{
-      time: "06:00",
-      class: "Morning CrossFit",
-      trainer: "Youssef"
+      time: "08:00 - 15:30",
+      class: "Monday, Wednesday, Friday",
+      trainer: "Morning"
     }, {
-      time: "09:00",
-      class: "Women's Fitness",
-      trainer: "Fatima"
+      time: "20:30 - 23:30",
+      class: "Monday, Wednesday, Friday",
+      trainer: "Evening"
     }, {
-      time: "18:00",
-      class: "Evening Strength",
+      time: "12:30 - 23:30",
+      class: "Tuesday, Thursday, Saturday",
       trainer: "Mohamed"
     }, {
       time: "20:00",
