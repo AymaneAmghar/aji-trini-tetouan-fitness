@@ -132,7 +132,7 @@ const Index = () => {
             <a href="#pricing" className="text-foreground hover:text-primary transition-colors">Pricing</a>
             <a href="#contact" className="text-foreground hover:text-primary transition-colors">Contact</a>
           </div>
-          <Button variant="hero">Join Now</Button>
+          <Button variant="hero" onClick={() => window.open('https://www.instagram.com/ajitrini09?igsh=MWp5bXV4ZXVxNzNpZA==', '_blank')}>Join Now</Button>
         </div>
       </nav>
 
@@ -159,7 +159,7 @@ const Index = () => {
           <div className="flex flex-col md:flex-row gap-4 justify-center animate-slide-up" style={{
           animationDelay: '0.4s'
         }}>
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
+            <Button variant="hero" size="lg" className="text-lg px-8 py-4" onClick={() => window.open('https://www.instagram.com/ajitrini09?igsh=MWp5bXV4ZXVxNzNpZA==', '_blank')}>
               Join Now
             </Button>
             <Button variant="outline-hero" size="lg" className="text-lg px-8 py-4">
@@ -317,7 +317,7 @@ const Index = () => {
                         <span className="text-muted-foreground">{feature}</span>
                       </li>)}
                   </ul>
-                  <Button variant={plan.popular ? "hero" : "outline-hero"} className="w-full">
+                  <Button variant={plan.popular ? "hero" : "outline-hero"} className="w-full" onClick={() => window.open('https://www.instagram.com/ajitrini09?igsh=MWp5bXV4ZXVxNzNpZA==', '_blank')}>
                     {plan.popular ? "Start Training Today" : "Choose Plan"}
                   </Button>
                 </CardContent>
