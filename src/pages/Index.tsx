@@ -7,125 +7,125 @@ import { Textarea } from "@/components/ui/textarea";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Dumbbell, Users, Calendar, User, Weight } from "lucide-react";
 import heroImage from "../assets/gym-hero.jpg";
-
 const Index = () => {
   const [activeDay, setActiveDay] = useState("monday");
-
-  const services = [
-    {
-      icon: <Weight className="h-8 w-8" />,
-      title: "Weight Training",
-      description: "Professional equipment and guided sessions for strength building"
-    },
-    {
-      icon: <Dumbbell className="h-8 w-8" />,
-      title: "CrossFit",
-      description: "High-intensity functional movement workouts"
-    },
-    {
-      icon: <Users className="h-8 w-8" />,
-      title: "Group Classes",
-      description: "Motivating group sessions with expert trainers"
-    },
-    {
-      icon: <User className="h-8 w-8" />,
-      title: "Personal Training",
-      description: "One-on-one customized fitness programs"
-    },
-    {
-      icon: <Users className="h-8 w-8" />,
-      title: "Women's Fitness",
-      description: "Safe, supportive environment for women's training"
-    },
-    {
-      icon: <Calendar className="h-8 w-8" />,
-      title: "Cardio Zone",
-      description: "Modern cardio equipment with entertainment systems"
-    }
-  ];
-
-  const trainers = [
-    {
-      name: "Youssef Benali",
-      specialty: "CrossFit & Strength",
-      experience: "8 years",
-      bio: "Certified trainer specializing in functional fitness and strength conditioning."
-    },
-    {
-      name: "Fatima El Amrani",
-      specialty: "Women's Fitness",
-      experience: "6 years", 
-      bio: "Expert in women's health and fitness, yoga instructor."
-    },
-    {
-      name: "Mohamed Tazi",
-      specialty: "Personal Training",
-      experience: "10 years",
-      bio: "Former athlete turned personal trainer, specializes in weight loss and muscle building."
-    }
-  ];
-
+  const services = [{
+    icon: <Weight className="h-8 w-8" />,
+    title: "Weight Training",
+    description: "Professional equipment and guided sessions for strength building"
+  }, {
+    icon: <Dumbbell className="h-8 w-8" />,
+    title: "CrossFit",
+    description: "High-intensity functional movement workouts"
+  }, {
+    icon: <Users className="h-8 w-8" />,
+    title: "Group Classes",
+    description: "Motivating group sessions with expert trainers"
+  }, {
+    icon: <User className="h-8 w-8" />,
+    title: "Personal Training",
+    description: "One-on-one customized fitness programs"
+  }, {
+    icon: <Users className="h-8 w-8" />,
+    title: "Women's Fitness",
+    description: "Safe, supportive environment for women's training"
+  }, {
+    icon: <Calendar className="h-8 w-8" />,
+    title: "Cardio Zone",
+    description: "Modern cardio equipment with entertainment systems"
+  }];
+  const trainers = [{
+    name: "Youssef Benali",
+    specialty: "CrossFit & Strength",
+    experience: "8 years",
+    bio: "Certified trainer specializing in functional fitness and strength conditioning."
+  }, {
+    name: "Fatima El Amrani",
+    specialty: "Women's Fitness",
+    experience: "6 years",
+    bio: "Expert in women's health and fitness, yoga instructor."
+  }, {
+    name: "Mohamed Tazi",
+    specialty: "Personal Training",
+    experience: "10 years",
+    bio: "Former athlete turned personal trainer, specializes in weight loss and muscle building."
+  }];
   const schedule = {
-    monday: [
-      { time: "06:00", class: "Morning CrossFit", trainer: "Youssef" },
-      { time: "09:00", class: "Women's Fitness", trainer: "Fatima" },
-      { time: "18:00", class: "Evening Strength", trainer: "Mohamed" },
-      { time: "20:00", class: "Group HIIT", trainer: "Youssef" }
-    ],
-    tuesday: [
-      { time: "07:00", class: "Cardio Blast", trainer: "Fatima" },
-      { time: "10:00", class: "Weight Training", trainer: "Mohamed" },
-      { time: "19:00", class: "CrossFit Pro", trainer: "Youssef" }
-    ],
-    wednesday: [
-      { time: "06:00", class: "Morning Yoga", trainer: "Fatima" },
-      { time: "17:00", class: "Strength & Power", trainer: "Mohamed" },
-      { time: "19:30", class: "Mixed Training", trainer: "Youssef" }
-    ]
+    monday: [{
+      time: "06:00",
+      class: "Morning CrossFit",
+      trainer: "Youssef"
+    }, {
+      time: "09:00",
+      class: "Women's Fitness",
+      trainer: "Fatima"
+    }, {
+      time: "18:00",
+      class: "Evening Strength",
+      trainer: "Mohamed"
+    }, {
+      time: "20:00",
+      class: "Group HIIT",
+      trainer: "Youssef"
+    }],
+    tuesday: [{
+      time: "07:00",
+      class: "Cardio Blast",
+      trainer: "Fatima"
+    }, {
+      time: "10:00",
+      class: "Weight Training",
+      trainer: "Mohamed"
+    }, {
+      time: "19:00",
+      class: "CrossFit Pro",
+      trainer: "Youssef"
+    }],
+    wednesday: [{
+      time: "06:00",
+      class: "Morning Yoga",
+      trainer: "Fatima"
+    }, {
+      time: "17:00",
+      class: "Strength & Power",
+      trainer: "Mohamed"
+    }, {
+      time: "19:30",
+      class: "Mixed Training",
+      trainer: "Youssef"
+    }]
   };
-
-  const testimonials = [
-    {
-      name: "Ahmed Bennani",
-      text: "Aji Trini changed my life! The trainers are amazing and the community is so supportive.",
-      location: "Tetouan"
-    },
-    {
-      name: "Sara Benjelloun",
-      text: "Finally found a gym where I feel comfortable and motivated. The women's section is perfect!",
-      location: "Tetouan"
-    },
-    {
-      name: "Omar Chakiri",
-      text: "Best gym in Tetouan! Professional equipment and knowledgeable trainers.",
-      location: "Tetouan"
-    }
-  ];
-
-  const pricingPlans = [
-    {
-      name: "Day Pass",
-      price: "50 DH",
-      period: "per day",
-      features: ["Full gym access", "All equipment", "Group classes", "Locker room"]
-    },
-    {
-      name: "Monthly",
-      price: "300 DH",
-      period: "per month",
-      features: ["Unlimited access", "All classes", "Nutrition guidance", "Free towel service"],
-      popular: true
-    },
-    {
-      name: "Personal Training",
-      price: "150 DH",
-      period: "per session",
-      features: ["1-on-1 training", "Customized program", "Nutrition plan", "Progress tracking"]
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+  const testimonials = [{
+    name: "Ahmed Bennani",
+    text: "Aji Trini changed my life! The trainers are amazing and the community is so supportive.",
+    location: "Tetouan"
+  }, {
+    name: "Sara Benjelloun",
+    text: "Finally found a gym where I feel comfortable and motivated. The women's section is perfect!",
+    location: "Tetouan"
+  }, {
+    name: "Omar Chakiri",
+    text: "Best gym in Tetouan! Professional equipment and knowledgeable trainers.",
+    location: "Tetouan"
+  }];
+  const pricingPlans = [{
+    name: "Day Pass",
+    price: "50 DH",
+    period: "per day",
+    features: ["Full gym access", "All equipment", "Group classes", "Locker room"]
+  }, {
+    name: "Monthly",
+    price: "300 DH",
+    period: "per month",
+    features: ["Unlimited access", "All classes", "Nutrition guidance", "Free towel service"],
+    popular: true
+  }, {
+    name: "Personal Training",
+    price: "150 DH",
+    period: "per session",
+    features: ["1-on-1 training", "Customized program", "Nutrition plan", "Progress tracking"]
+  }];
+  return <div className="min-h-screen bg-background">
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-background/95 backdrop-blur-sm border-b border-gym-border">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -146,10 +146,9 @@ const Index = () => {
 
       {/* Hero Section */}
       <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: `url(${heroImage})`
+      }} />
         <div className="absolute inset-0 bg-gradient-to-r from-gym-black/80 via-gym-black/60 to-transparent" />
         
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
@@ -160,10 +159,14 @@ const Index = () => {
           <p className="text-2xl md:text-3xl text-primary font-bold mb-4 animate-slide-up">
             Change Your Life
           </p>
-          <p className="text-xl text-muted-foreground mb-8 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-            Strength Lives Here • Push Your Limits in Tetouan • Train Hard, Live Strong
-          </p>
-          <div className="flex flex-col md:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.4s' }}>
+          <p className="text-xl text-muted-foreground mb-8 animate-slide-up" style={{
+          animationDelay: '0.2s'
+        }}>Strength Lives Here • Push Your Limits in Tetouan • Train Hard, Live Strong
+
+        </p>
+          <div className="flex flex-col md:flex-row gap-4 justify-center animate-slide-up" style={{
+          animationDelay: '0.4s'
+        }}>
             <Button variant="hero" size="lg" className="text-lg px-8 py-4">
               Join Now
             </Button>
@@ -202,8 +205,7 @@ const Index = () => {
             Our <span className="text-primary">Services</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <Card key={index} className="bg-gym-card-bg border-gym-border hover:border-primary/50 transition-all duration-300 hover:shadow-orange group">
+            {services.map((service, index) => <Card key={index} className="bg-gym-card-bg border-gym-border hover:border-primary/50 transition-all duration-300 hover:shadow-orange group">
                 <CardHeader className="text-center">
                   <div className="mx-auto mb-4 p-4 bg-primary/10 rounded-full w-fit text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
                     {service.icon}
@@ -215,8 +217,7 @@ const Index = () => {
                     {service.description}
                   </CardDescription>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -230,15 +231,13 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <Tabs value={activeDay} onValueChange={setActiveDay} className="w-full">
               <TabsList className="grid w-full grid-cols-3 bg-gym-black/50">
-                <TabsTrigger value="monday" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Monday</TabsTrigger>
-                <TabsTrigger value="tuesday" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Tuesday</TabsTrigger>
-                <TabsTrigger value="wednesday" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Wednesday</TabsTrigger>
+                <TabsTrigger value="monday" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Men</TabsTrigger>
+                <TabsTrigger value="tuesday" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Women</TabsTrigger>
+                <TabsTrigger value="wednesday" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Kids</TabsTrigger>
               </TabsList>
-              {Object.entries(schedule).map(([day, classes]) => (
-                <TabsContent key={day} value={day} className="mt-8">
+              {Object.entries(schedule).map(([day, classes]) => <TabsContent key={day} value={day} className="mt-8">
                   <div className="grid gap-4">
-                    {classes.map((classItem, index) => (
-                      <Card key={index} className="bg-background border-gym-border">
+                    {classes.map((classItem, index) => <Card key={index} className="bg-background border-gym-border">
                         <CardContent className="flex items-center justify-between p-6">
                           <div>
                             <h4 className="text-lg font-semibold">{classItem.class}</h4>
@@ -248,11 +247,9 @@ const Index = () => {
                             {classItem.time}
                           </Badge>
                         </CardContent>
-                      </Card>
-                    ))}
+                      </Card>)}
                   </div>
-                </TabsContent>
-              ))}
+                </TabsContent>)}
             </Tabs>
           </div>
         </div>
@@ -265,8 +262,7 @@ const Index = () => {
             Meet Our <span className="text-primary">Trainers</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {trainers.map((trainer, index) => (
-              <Card key={index} className="bg-gym-card-bg border-gym-border hover:border-primary/50 transition-all duration-300">
+            {trainers.map((trainer, index) => <Card key={index} className="bg-gym-card-bg border-gym-border hover:border-primary/50 transition-all duration-300">
                 <CardHeader className="text-center">
                   <div className="mx-auto mb-4 w-24 h-24 bg-primary/10 rounded-full flex items-center justify-center">
                     <User className="h-12 w-12 text-primary" />
@@ -279,8 +275,7 @@ const Index = () => {
                 <CardContent>
                   <p className="text-muted-foreground text-center">{trainer.bio}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -292,8 +287,7 @@ const Index = () => {
             What Our Members <span className="text-primary">Say</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="bg-background border-gym-border">
+            {testimonials.map((testimonial, index) => <Card key={index} className="bg-background border-gym-border">
                 <CardContent className="p-6">
                   <p className="text-muted-foreground mb-4 italic">"{testimonial.text}"</p>
                   <div className="border-t border-gym-border pt-4">
@@ -301,8 +295,7 @@ const Index = () => {
                     <p className="text-sm text-primary">{testimonial.location}</p>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -314,13 +307,10 @@ const Index = () => {
             Membership <span className="text-primary">Plans</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            {pricingPlans.map((plan, index) => (
-              <Card key={index} className={`bg-gym-card-bg border-gym-border relative ${plan.popular ? 'border-primary scale-105' : ''}`}>
-                {plan.popular && (
-                  <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-primary-foreground">
+            {pricingPlans.map((plan, index) => <Card key={index} className={`bg-gym-card-bg border-gym-border relative ${plan.popular ? 'border-primary scale-105' : ''}`}>
+                {plan.popular && <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-primary-foreground">
                     Most Popular
-                  </Badge>
-                )}
+                  </Badge>}
                 <CardHeader className="text-center">
                   <CardTitle className="text-2xl">{plan.name}</CardTitle>
                   <div className="mt-4">
@@ -330,19 +320,16 @@ const Index = () => {
                 </CardHeader>
                 <CardContent>
                   <ul className="space-y-3 mb-6">
-                    {plan.features.map((feature, featureIndex) => (
-                      <li key={featureIndex} className="flex items-center">
+                    {plan.features.map((feature, featureIndex) => <li key={featureIndex} className="flex items-center">
                         <div className="w-2 h-2 bg-primary rounded-full mr-3" />
                         <span className="text-muted-foreground">{feature}</span>
-                      </li>
-                    ))}
+                      </li>)}
                   </ul>
                   <Button variant={plan.popular ? "hero" : "outline-hero"} className="w-full">
                     {plan.popular ? "Start Training Today" : "Choose Plan"}
                   </Button>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -359,15 +346,15 @@ const Index = () => {
               <div className="space-y-4 mb-8">
                 <div>
                   <h4 className="font-semibold text-primary">Address</h4>
-                  <p className="text-muted-foreground">123 Avenue Mohammed V, Tetouan, Morocco</p>
+                  <p className="text-muted-foreground">Av. Haj Mohamed Bennouna, Boussafou, Tetouan, Morocco</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-primary">Phone</h4>
-                  <p className="text-muted-foreground">+212 539 12 34 56</p>
+                  <p className="text-muted-foreground">+212 628473604</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-primary">WhatsApp</h4>
-                  <p className="text-muted-foreground">+212 661 23 45 67</p>
+                  <h4 className="font-semibold text-primary">Intagram</h4>
+                  <p className="text-muted-foreground">@ajitrini09</p>
                 </div>
               </div>
               
@@ -375,16 +362,13 @@ const Index = () => {
                 <h4 className="font-semibold text-primary mb-4">Opening Hours</h4>
                 <div className="space-y-2 text-muted-foreground">
                   <div className="flex justify-between">
-                    <span>Monday - Friday</span>
-                    <span>06:00 - 22:00</span>
+                    <span>Monday - Saturday</span>
+                    <span>08:00 - 23:30</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span>Saturday</span>
-                    <span>08:00 - 20:00</span>
-                  </div>
+                  
                   <div className="flex justify-between">
                     <span>Sunday</span>
-                    <span>10:00 - 18:00</span>
+                    <span>Closed</span>
                   </div>
                 </div>
               </div>
@@ -398,11 +382,7 @@ const Index = () => {
                   <Input placeholder="Your Phone" className="bg-background border-gym-border" />
                 </div>
                 <Input placeholder="Your Email" className="bg-background border-gym-border" />
-                <Textarea 
-                  placeholder="Your Message" 
-                  rows={4} 
-                  className="bg-background border-gym-border"
-                />
+                <Textarea placeholder="Your Message" rows={4} className="bg-background border-gym-border" />
                 <Button variant="hero" className="w-full">
                   Send Message
                 </Button>
@@ -421,10 +401,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <img src="/lovable-uploads/598dd682-567a-4cda-a07d-3d6f8dcb5151.png" alt="Aji Trini" className="h-12 w-auto mb-4" />
-              <p className="text-muted-foreground">
-                Transform your life at Tetouan's premier fitness destination. 
-                Strength, community, and motivation in one place.
-              </p>
+              <p className="text-muted-foreground">Unleash your full potential at our GYM! We're your destination for fitness success. Join us now and start your journey to a fitter, happier you!</p>
             </div>
             <div>
               <h4 className="font-semibold text-primary mb-4">Quick Links</h4>
@@ -438,10 +415,10 @@ const Index = () => {
             <div>
               <h4 className="font-semibold text-primary mb-4">Contact Info</h4>
               <div className="space-y-2 text-muted-foreground">
-                <p>123 Avenue Mohammed V</p>
+                <p>Av Haj Mohamed Bennouna</p>
                 <p>Tetouan, Morocco</p>
-                <p>+212 539 12 34 56</p>
-                <p>info@ajitrini.ma</p>
+                <p>+212 628473604</p>
+                <p>@ajitrini09</p>
               </div>
             </div>
           </div>
@@ -450,8 +427,6 @@ const Index = () => {
           </div>
         </div>
       </footer>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
