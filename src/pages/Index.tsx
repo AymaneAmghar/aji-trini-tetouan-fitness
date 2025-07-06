@@ -88,16 +88,20 @@ const Index = () => {
     }]
   };
   const testimonials = [{
-    name: "Ahmed Bennani",
-    text: "Aji Trini changed my life! The trainers are amazing and the community is so supportive.",
+    name: "Lamyae Ezzaouia",
+    text: "Aji Trini is the best gym.",
     location: "Tetouan"
   }, {
     name: "Sara Benjelloun",
     text: "Finally found a gym where I feel comfortable and motivated. The women's section is perfect!",
     location: "Tetouan"
   }, {
-    name: "Omar Chakiri",
-    text: "Best gym in Tetouan! Professional equipment and knowledgeable trainers.",
+    name: "Aymane Amghar",
+    text: "Aji Trini changed my life! The trainers are amazing and the community is so supportive.",
+    location: "Tetouan"
+  }, {
+    name: "C A",
+    text: "This place is a rare gem in Tetouan. Great and professional coaching, clean equipment and airy space. I highly recommend you because this is the best place to become the best version of yourself!",
     location: "Tetouan"
   }];
   const pricingPlans = [{
