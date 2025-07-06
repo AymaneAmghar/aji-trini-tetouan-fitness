@@ -231,9 +231,9 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <Tabs value={activeDay} onValueChange={setActiveDay} className="w-full">
               <TabsList className="grid w-full grid-cols-3 bg-gym-black/50">
-                <TabsTrigger value="monday" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Monday</TabsTrigger>
-                <TabsTrigger value="tuesday" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Men</TabsTrigger>
-                <TabsTrigger value="wednesday" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Women</TabsTrigger>
+                <TabsTrigger value="monday" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Men</TabsTrigger>
+                <TabsTrigger value="tuesday" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Women</TabsTrigger>
+                <TabsTrigger value="wednesday" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Kids</TabsTrigger>
               </TabsList>
               {Object.entries(schedule).map(([day, classes]) => <TabsContent key={day} value={day} className="mt-8">
                   <div className="grid gap-4">
@@ -346,15 +346,15 @@ const Index = () => {
               <div className="space-y-4 mb-8">
                 <div>
                   <h4 className="font-semibold text-primary">Address</h4>
-                  <p className="text-muted-foreground">123 Avenue Mohammed V, Tetouan, Morocco</p>
+                  <p className="text-muted-foreground">Av, Haj Mohamed Bennouna, Boussafou, Tetouan, Morocco</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-primary">Phone</h4>
-                  <p className="text-muted-foreground">+212 539 12 34 56</p>
+                  <p className="text-muted-foreground">+212 628473604</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-primary">WhatsApp</h4>
-                  <p className="text-muted-foreground">+212 661 23 45 67</p>
+                  <h4 className="font-semibold text-primary">Instagram</h4>
+                  <p className="text-muted-foreground">@ajitrini09</p>
                 </div>
               </div>
               
@@ -362,16 +362,13 @@ const Index = () => {
                 <h4 className="font-semibold text-primary mb-4">Opening Hours</h4>
                 <div className="space-y-2 text-muted-foreground">
                   <div className="flex justify-between">
-                    <span>Monday - Friday</span>
-                    <span>06:00 - 22:00</span>
+                    <span>Monday - Saturday</span>
+                    <span>08:00 - 23:30</span>
                   </div>
-                  <div className="flex justify-between">
-                    <span>Saturday</span>
-                    <span>08:00 - 20:00</span>
-                  </div>
+                  
                   <div className="flex justify-between">
                     <span>Sunday</span>
-                    <span>10:00 - 18:00</span>
+                    <span>Closed</span>
                   </div>
                 </div>
               </div>
