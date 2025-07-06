@@ -153,7 +153,7 @@ const Index = () => {
         
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
           <h1 className="text-6xl md:text-8xl font-black mb-6 animate-fade-in">
-            <span className="text-foreground">AJI</span>{" "}
+            <span className="text-foreground font-bold">AJI</span>{" "}
             <span className="text-primary animate-glow-pulse">TRINI</span>
           </h1>
           <p className="text-2xl md:text-3xl text-primary font-bold mb-4 animate-slide-up">
@@ -161,9 +161,9 @@ const Index = () => {
           </p>
           <p className="text-xl text-muted-foreground mb-8 animate-slide-up" style={{
           animationDelay: '0.2s'
-        }}>Strength Lives Here • Push Your Limits in Tetouan • Train Hard, Live Strong
-
-        </p>
+        }}>
+            Strength Lives Here • Push Your Limits in Tetouan • Train Hard, Live Strong
+          </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center animate-slide-up" style={{
           animationDelay: '0.4s'
         }}>
@@ -231,9 +231,9 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <Tabs value={activeDay} onValueChange={setActiveDay} className="w-full">
               <TabsList className="grid w-full grid-cols-3 bg-gym-black/50">
-                <TabsTrigger value="monday" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Men</TabsTrigger>
-                <TabsTrigger value="tuesday" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Women</TabsTrigger>
-                <TabsTrigger value="wednesday" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Kids</TabsTrigger>
+                <TabsTrigger value="monday" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Monday</TabsTrigger>
+                <TabsTrigger value="tuesday" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Tuesday</TabsTrigger>
+                <TabsTrigger value="wednesday" className="data-[state=active]:bg-primary data-[state=active]:text-primary-foreground">Wednesday</TabsTrigger>
               </TabsList>
               {Object.entries(schedule).map(([day, classes]) => <TabsContent key={day} value={day} className="mt-8">
                   <div className="grid gap-4">
@@ -346,15 +346,15 @@ const Index = () => {
               <div className="space-y-4 mb-8">
                 <div>
                   <h4 className="font-semibold text-primary">Address</h4>
-                  <p className="text-muted-foreground">Av. Haj Mohamed Bennouna, Boussafou, Tetouan, Morocco</p>
+                  <p className="text-muted-foreground">123 Avenue Mohammed V, Tetouan, Morocco</p>
                 </div>
                 <div>
                   <h4 className="font-semibold text-primary">Phone</h4>
-                  <p className="text-muted-foreground">+212 628473604</p>
+                  <p className="text-muted-foreground">+212 539 12 34 56</p>
                 </div>
                 <div>
-                  <h4 className="font-semibold text-primary">Intagram</h4>
-                  <p className="text-muted-foreground">@ajitrini09</p>
+                  <h4 className="font-semibold text-primary">WhatsApp</h4>
+                  <p className="text-muted-foreground">+212 661 23 45 67</p>
                 </div>
               </div>
               
@@ -362,13 +362,16 @@ const Index = () => {
                 <h4 className="font-semibold text-primary mb-4">Opening Hours</h4>
                 <div className="space-y-2 text-muted-foreground">
                   <div className="flex justify-between">
-                    <span>Monday - Saturday</span>
-                    <span>08:00 - 23:30</span>
+                    <span>Monday - Friday</span>
+                    <span>06:00 - 22:00</span>
                   </div>
-                  
+                  <div className="flex justify-between">
+                    <span>Saturday</span>
+                    <span>08:00 - 20:00</span>
+                  </div>
                   <div className="flex justify-between">
                     <span>Sunday</span>
-                    <span>Closed</span>
+                    <span>10:00 - 18:00</span>
                   </div>
                 </div>
               </div>
@@ -401,7 +404,10 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
               <img src="/lovable-uploads/598dd682-567a-4cda-a07d-3d6f8dcb5151.png" alt="Aji Trini" className="h-12 w-auto mb-4" />
-              <p className="text-muted-foreground">Unleash your full potential at our GYM! We're your destination for fitness success. Join us now and start your journey to a fitter, happier you!</p>
+              <p className="text-muted-foreground">
+                Transform your life at Tetouan's premier fitness destination. 
+                Strength, community, and motivation in one place.
+              </p>
             </div>
             <div>
               <h4 className="font-semibold text-primary mb-4">Quick Links</h4>
@@ -415,10 +421,10 @@ const Index = () => {
             <div>
               <h4 className="font-semibold text-primary mb-4">Contact Info</h4>
               <div className="space-y-2 text-muted-foreground">
-                <p>Av Haj Mohamed Bennouna</p>
+                <p>123 Avenue Mohammed V</p>
                 <p>Tetouan, Morocco</p>
-                <p>+212 628473604</p>
-                <p>@ajitrini09</p>
+                <p>+212 539 12 34 56</p>
+                <p>info@ajitrini.ma</p>
               </div>
             </div>
           </div>
