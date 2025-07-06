@@ -35,19 +35,19 @@ const Index = () => {
     description: "Modern cardio equipment with entertainment systems"
   }];
   const trainers = [{
-    name: "Youssef Benali",
+    name: "Soufian Bakali",
     specialty: "CrossFit & Strength",
     experience: "8 years",
-    bio: "Certified trainer specializing in functional fitness and strength conditioning."
+    bio: "Professional coach, 3rd in Men's Physique, Diet Plans"
   }, {
-    name: "Fatima El Amrani",
+    name: "Al Khansaa El Ouardighi",
     specialty: "Women's Fitness",
     experience: "6 years",
-    bio: "Expert in women's health and fitness, yoga instructor."
+    bio: "Expert in women's health and fitness, Healthy Lifestyle."
   }, {
-    name: "Mohamed Tazi",
+    name: "Mohamed Zouhdi",
     specialty: "Personal Training",
-    experience: "10 years",
+    experience: "5 years",
     bio: "Former athlete turned personal trainer, specializes in weight loss and muscle building."
   }];
   const schedule = {
@@ -67,11 +67,11 @@ const Index = () => {
     tuesday: [{
       time: "16:00 - 20:00",
       class: "Monday, Wednesday, Friday (Evening)",
-      trainer: "Soufian Bakali"
+      trainer: "Al Khansaa El Ouardighi"
     }, {
       time: "08:00 - 12:00",
       class: "Tuesday, Thursday, Saturday (Morning)",
-      trainer: "Soufian Bakali"
+      trainer: "Al Khansaa El Ouardighi"
     }],
     wednesday: [{
       time: "06:00",
