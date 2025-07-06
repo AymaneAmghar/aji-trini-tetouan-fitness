@@ -368,17 +368,26 @@ const Index = () => {
 
             <div>
               <h3 className="text-2xl font-bold mb-6">Send us a Message</h3>
-              <form className="space-y-6">
+              <form className="space-y-6" onSubmit={(e) => {
+                e.preventDefault();
+                const formData = new FormData(e.currentTarget);
+                const name = formData.get('name') || '';
+                const phone = formData.get('phone') || '';
+                const email = formData.get('email') || '';
+                const message = formData.get('message') || '';
+                const whatsappMessage = `Hello! My name is ${name}. ${phone ? `Phone: ${phone}. ` : ''}${email ? `Email: ${email}. ` : ''}Message: ${message}`;
+                window.open(`https://wa.me/212628473604?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+              }}>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <Input placeholder="Your Name" className="bg-background border-gym-border" />
-                  <Input placeholder="Your Phone" className="bg-background border-gym-border" />
+                  <Input name="name" placeholder="Your Name" className="bg-background border-gym-border" />
+                  <Input name="phone" placeholder="Your Phone" className="bg-background border-gym-border" />
                 </div>
-                <Input placeholder="Your Email" className="bg-background border-gym-border" />
-                <Textarea placeholder="Your Message" rows={4} className="bg-background border-gym-border" />
-                <Button variant="hero" className="w-full">
+                <Input name="email" placeholder="Your Email" className="bg-background border-gym-border" />
+                <Textarea name="message" placeholder="Your Message" rows={4} className="bg-background border-gym-border" />
+                <Button type="submit" variant="hero" className="w-full">
                   Send Message
                 </Button>
-                <Button variant="outline-hero" className="w-full">
+                <Button type="button" variant="outline-hero" className="w-full" onClick={() => window.open('https://wa.me/212628473604', '_blank')}>
                   Chat on WhatsApp
                 </Button>
               </form>
