@@ -65,17 +65,13 @@ const Index = () => {
       trainer: "Mohamed"
     }],
     tuesday: [{
-      time: "07:00",
-      class: "Cardio Blast",
-      trainer: "Fatima"
+      time: "16:00 - 20:00",
+      class: "Monday, Wednesday, Friday",
+      trainer: "Evening"
     }, {
-      time: "10:00",
-      class: "Weight Training",
-      trainer: "Mohamed"
-    }, {
-      time: "19:00",
-      class: "CrossFit Pro",
-      trainer: "Youssef"
+      time: "08:00 - 12:00",
+      class: "Tuesday, Thursday, Saturday",
+      trainer: "Morning"
     }],
     wednesday: [{
       time: "06:00",
