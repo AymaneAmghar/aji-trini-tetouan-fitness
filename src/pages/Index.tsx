@@ -53,25 +53,25 @@ const Index = () => {
   const schedule = {
     monday: [{
       time: "08:00 - 15:30",
-      class: "Monday, Wednesday, Friday",
-      trainer: "Morning"
+      class: "Monday, Wednesday, Friday (Morning)",
+      trainer: "Soufian Bakali"
     }, {
       time: "20:30 - 23:30",
-      class: "Monday, Wednesday, Friday",
-      trainer: "Evening"
+      class: "Monday, Wednesday, Friday (Evening)",
+      trainer: "Soufian Bakali"
     }, {
       time: "12:30 - 23:30",
       class: "Tuesday, Thursday, Saturday",
-      trainer: "Mohamed"
+      trainer: "Soufian Bakali"
     }],
     tuesday: [{
       time: "16:00 - 20:00",
-      class: "Monday, Wednesday, Friday",
-      trainer: "Evening"
+      class: "Monday, Wednesday, Friday (Evening)",
+      trainer: "Soufian Bakali"
     }, {
       time: "08:00 - 12:00",
-      class: "Tuesday, Thursday, Saturday",
-      trainer: "Morning"
+      class: "Tuesday, Thursday, Saturday (Morning)",
+      trainer: "Soufian Bakali"
     }],
     wednesday: [{
       time: "06:00",
