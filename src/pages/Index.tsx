@@ -382,7 +382,7 @@ const Index = () => {
                   <Input name="name" placeholder="Your Name" className="bg-background border-gym-border" />
                   <Input name="phone" placeholder="Your Phone" className="bg-background border-gym-border" />
                 </div>
-                <Input name="email" placeholder="Your Plan" className="bg-background border-gym-border" />
+                <Input name="plan" placeholder="Your Plan" className="bg-background border-gym-border" />
                 <Textarea name="message" placeholder="Your Message" rows={4} className="bg-background border-gym-border" />
                 <Button type="submit" variant="hero" className="w-full">
                   Send Message
