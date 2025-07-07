@@ -163,7 +163,7 @@ const Index = () => {
             <Button variant="hero" size="lg" className="text-lg px-8 py-4" onClick={() => window.open('https://www.instagram.com/ajitrini09?igsh=MWp5bXV4ZXVxNzNpZA==', '_blank')}>
               Join Now
             </Button>
-            <Button variant="outline-hero" size="lg" className="text-lg px-8 py-4">
+            <Button variant="outline-hero" size="lg" className="text-lg px-8 py-4" onClick={() => document.getElementById('schedule')?.scrollIntoView({ behavior: 'smooth' })}>
               View Classes
             </Button>
           </div>
