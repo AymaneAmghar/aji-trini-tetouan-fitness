@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Dumbbell, Users, Calendar, User, Weight } from "lucide-react";
 import heroImage from "../assets/gym-hero.jpg";
 const Index = () => {
@@ -298,32 +299,46 @@ const Index = () => {
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">
             Our <span className="text-primary">Gym</span>
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 max-w-7xl mx-auto">
-            {[
-              "/lovable-uploads/3e8aab36-8d5b-4d66-9302-e2e2e7c002a3.png",
-              "/lovable-uploads/afbf8b99-7004-4fdc-9424-56299118b2dc.png", 
-              "/lovable-uploads/f7c1c605-56cd-43b5-826b-d36b905c4ec1.png",
-              "/lovable-uploads/648fe006-a102-46a1-8c81-147bcb1fe195.png",
-              "/lovable-uploads/95577eec-5983-4bcf-b81f-4f335a112bdf.png",
-              "/lovable-uploads/d4b5a91d-bfce-4ea0-b507-adfaf294eb4e.png",
-              "/lovable-uploads/ac2fe23f-078e-42c2-a36a-7d122375d481.png",
-              "/lovable-uploads/b7b1d0ea-289f-41be-8b73-cb043aca0083.png",
-              "/lovable-uploads/2339b41a-a0b4-4dc6-9b23-a6b282543629.png",
-              "/lovable-uploads/9f942829-323c-4d9c-abb9-2af04d4ea030.png"
-            ].map((image, index) => (
-              <div key={index} className="group relative overflow-hidden rounded-lg bg-gym-card-bg border border-gym-border hover:border-primary/50 transition-all duration-300">
-                <img 
-                  src={image} 
-                  alt={`Aji Trini Gym ${index + 1}`}
-                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-gym-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <p className="font-semibold">Aji Trini Gym</p>
-                  <p className="text-sm text-primary">Professional Equipment</p>
-                </div>
-              </div>
-            ))}
+          <div className="max-w-7xl mx-auto">
+            <Carousel
+              opts={{
+                align: "start",
+                loop: true,
+              }}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-4">
+                {[
+                  "/lovable-uploads/3e8aab36-8d5b-4d66-9302-e2e2e7c002a3.png",
+                  "/lovable-uploads/afbf8b99-7004-4fdc-9424-56299118b2dc.png", 
+                  "/lovable-uploads/f7c1c605-56cd-43b5-826b-d36b905c4ec1.png",
+                  "/lovable-uploads/648fe006-a102-46a1-8c81-147bcb1fe195.png",
+                  "/lovable-uploads/95577eec-5983-4bcf-b81f-4f335a112bdf.png",
+                  "/lovable-uploads/d4b5a91d-bfce-4ea0-b507-adfaf294eb4e.png",
+                  "/lovable-uploads/ac2fe23f-078e-42c2-a36a-7d122375d481.png",
+                  "/lovable-uploads/b7b1d0ea-289f-41be-8b73-cb043aca0083.png",
+                  "/lovable-uploads/2339b41a-a0b4-4dc6-9b23-a6b282543629.png",
+                  "/lovable-uploads/9f942829-323c-4d9c-abb9-2af04d4ea030.png"
+                ].map((image, index) => (
+                  <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3 xl:basis-1/4">
+                    <div className="group relative overflow-hidden rounded-lg bg-gym-card-bg border border-gym-border hover:border-primary/50 transition-all duration-300">
+                      <img 
+                        src={image} 
+                        alt={`Aji Trini Gym ${index + 1}`}
+                        className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-gym-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                      <div className="absolute bottom-4 left-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <p className="font-semibold">Aji Trini Gym</p>
+                        <p className="text-sm text-primary">Professional Equipment</p>
+                      </div>
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
           </div>
         </div>
       </section>
